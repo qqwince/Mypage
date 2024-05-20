@@ -1,0 +1,207 @@
+@keyframes spawn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes Text_hello {
+  0%{
+    color: black;
+  }
+  100%{
+    color: #ffffff;
+  }
+}
+
+
+body {
+  align-items: center;
+  padding-top: 56px;
+  margin: 0;
+  font-family: "Roboto","Arial",sans-serif;
+  display: flex;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: flex;
+  padding: 0;
+}
+.main-container {
+  background-color: #ffffff;
+  left: 31%;
+  right: 31%;
+  max-width: 800px;
+  min-width: 500px;
+  min-height: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  padding-top: 10px;
+  border: 2px solid #8da0ff8c;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgb(0, 85, 255);
+  animation: spawn 1s 0s linear;
+}
+
+.Left_section{
+  position: relative;
+  width: 65%;
+  flex: 4;  
+  align-items: center;
+  height: 70%;
+}
+
+.Right_section{
+  position: relative;
+  flex: 1;
+  width: 35%;
+  height: 70%;
+  padding: 0px;
+  align-items: center;
+}
+.Bottom_section{
+  width: 240px;
+  position: absolute;
+  left: 20px;
+}
+.urltext{
+  text-decoration: none;
+  margin: 0;
+  font-style: italic;
+  width: 75%;
+  font-family: "Roboto","Arial",sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+nav{
+  text-decoration: none;
+}
+.avatar{
+  padding-left: 5px;
+  border-radius: 50%;
+  height: 50%;
+  max-width: 200px;
+}
+.Welcome_text{
+  width: 80%;
+}
+
+/*--------- Film_rating side ---------*/
+
+.Film_window{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+}
+.Text_animation{
+  color: #ffffff;
+  align-items: center;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 90px;
+  font-weight: 600;
+  font-family: "Roboto","Arial",sans-serif;
+  animation: Text_hello 3s 0s linear;
+}
+.Description{
+  top: 10%;
+  left: 10%;
+  position: absolute;
+  text-align: start;
+}
+.Card{
+  width: calc(25% - 20px); /* Adjust width for four posters per row */
+  margin-bottom: 40px; /* Adjust margin between posters */
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+.Card.active{
+  opacity: 0.5;
+  align-items: center;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.Card.active .Rate{
+  opacity: 1;
+  transform: scale(1.4);
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-out;
+}
+
+.film_container{
+  margin-left: 5%;
+  justify-content: center;
+  margin-top: 10%;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  display: flex;
+  animation: spawn 3s 0s linear;
+}
+.poster{
+  width: 100%;
+  align-items: center;
+}
+.Rate {
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text */
+  user-select: none;
+}
+/* EZTYPE:: */
+.announce{
+  position: absolute;
+  justify-self: center;
+  top: 5%;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(99, 108, 127, 1);
+  border-radius: 50px;
+  width: 40%;
+  background-color: #fff;
+}
+.announce.h1{
+  font-size: 20px;
+  font-family: "Roboto","Arial",sans-serif;
+}
+
+.EZT_text{
+  text-align: center;
+  font-family: "Roboto","Arial",sans-serif;
+}
+.EZT_text.active{
+  color: red;
+  transition: all 0.2s linear;
+}
+.text-window {
+  position: relative;
+  padding: 20px;
+  background-color: #ffffff;
+  font-size: 40px;
+  height: 50vh;
+  width: 80vw;
+  border: 2px solid #80b1d9;
+  border-radius: 50px;
+  box-shadow: 0 0 40px rgba(99, 108, 127, 1);
+}
+.EZT_text_typed{
+  text-align: center;
+  font-family: "Roboto","Arial",sans-serif;
+  color: rgb(67, 226, 43);
+}
