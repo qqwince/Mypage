@@ -166,15 +166,18 @@ nav{
   user-select: none;
 }
 /* EZTYPE:: */
+
 .announce{
   position: absolute;
-  justify-self: center;
+  justify-content: center;
   top: 5%;
   text-align: center;
   box-shadow: 0 0 40px rgba(99, 108, 127, 1);
   border-radius: 50px;
   width: 40%;
+  left: 30%;
   background-color: #fff;
+  margin-bottom: 5%;
 }
 .announce.h1{
   font-size: 20px;
@@ -197,6 +200,7 @@ nav{
   height: 50vh;
   width: 80vw;
   border: 2px solid #80b1d9;
+  left: 10vw;
   border-radius: 50px;
   box-shadow: 0 0 40px rgba(99, 108, 127, 1);
 }
