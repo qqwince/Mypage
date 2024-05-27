@@ -9,21 +9,29 @@
 </head>
 
 <body>
+    <download-timer></download-timer>
     <style>
         body {
             background-image: url('static/images/cloud-normal.png');
         }
     </style>
-
-    <div class="announce">
-        <h1>Проверь свою скорость печати!</h1>
+    <div class="result">
+        <h1 id="result_of_type">Ваш результат: __ /</h1>
+        <button class="try_again" onclick="reset()">Сбросить</button>
     </div>
-    <div class="text-window"><span id="typed_text" class="EZT_text_typed"></span><span id="current_text"
-        class="EZT_text"></span><!--<span class="type_mark">|</span>--><span id="type_text" class="EZT-text">Накануне Нового года, 29 декабря, в России прошли первые роды косатки в искусственной среде обитания. Роды были сложными, но малышка появилась на свет, начала дышать и быстро развиваться. Увы, не прожив и месяца, 26 января, маленькая косатка погибла. Причиной смерти стала декомпенсация на фоне врожденного порока сердца, который невозможно было диагностировать.</span> </div>
-
+    <div class="announce">
+        <h1 class="announce_h1">Проверь свою скорость печати!</h1>
+        <span class="btn" onclick="minus_ten_time()" id="minus_ten_btn">-<</span>
+        <span class="btn"onclick="minus_time()" id="minus_btn">-</span>
+        <span id="timer" class="main_timer">00:00</span>
+        <span class="btn"onclick="plus_time()" id="plus_btn">+</span>
+        <span class="btn"onclick="plus_ten_time()" id="plus_ten_btn">>+</span>
+    </div>
+    <div class="text-window">
+        <span id="typed_text" class="EZT_text_typed"></span><span id="current_text" class="EZT_text"></span><span id="type_mark" class="type_mark">|</span><span id="type_text" class="EZT-text">Произошла ошибка!</span><span id="measurement" class="EZT_text_typed" style="visibility:hidden; position:absolute;"></span>
+    </div>
     
     <script src="script.js"></script>
-
 </body>
 
 </html>
