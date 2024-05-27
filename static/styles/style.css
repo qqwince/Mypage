@@ -1,3 +1,4 @@
+
 @keyframes spawn {
   0%{
     opacity: 0;
@@ -15,7 +16,6 @@
   }
 }
 
-
 body {
   align-items: center;
   padding-top: 56px;
@@ -29,6 +29,7 @@ body {
   background-attachment: flex;
   padding: 0;
 }
+
 .main-container {
   background-color: #ffffff;
   left: 31%;
@@ -170,29 +171,32 @@ nav{
 .announce{
   position: absolute;
   justify-content: center;
-  top: 5%;
+  top: 2%;
   text-align: center;
   box-shadow: 0 0 40px rgba(99, 108, 127, 1);
-  border-radius: 50px;
+  border-radius: 40px;
   width: 40%;
   left: 30%;
   background-color: #fff;
-  margin-bottom: 5%;
-}
-.announce.h1{
-  font-size: 20px;
   font-family: "Roboto","Arial",sans-serif;
+}
+.announce_h1{
+  font-family: "Roboto","Arial",sans-serif;
+  font-size: 40px;
 }
 
 .EZT_text{
+  color: rgb(67, 226, 43);
   text-align: center;
-  font-family: "Roboto","Arial",sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 .EZT_text.active{
+  font-family: "Courier New", Courier, monospace;
   color: red;
   transition: all 0.2s linear;
 }
 .text-window {
+  font-family: "Courier New", Courier, monospace;
   position: relative;
   padding: 20px;
   background-color: #ffffff;
@@ -203,9 +207,76 @@ nav{
   left: 10vw;
   border-radius: 50px;
   box-shadow: 0 0 40px rgba(99, 108, 127, 1);
+  top: -5%;
 }
 .EZT_text_typed{
   text-align: center;
-  font-family: "Roboto","Arial",sans-serif;
+  font-family: "Courier New", Courier, monospace;
   color: rgb(67, 226, 43);
+}
+.EZT_text_typed.active{
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(117, 152, 112);
+}
+.result{
+  position: absolute;
+  background-color: #ffff;
+  border: 2px solid #80b1d9;
+  border-radius: 50px;
+  padding: 10px;
+  bottom: 10%;
+  left: 25%;
+  right: 25%;
+  text-align: center;
+  justify-content: center;
+}
+.try_again{
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  right: 1.5%;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 2px solid #80b1d9;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  transition: transform 0.2s linear;
+}
+.try_again:hover {
+  background-color: #93b0fa;
+  transform: scale(1.05);
+  transition: transform 0.2s linear;
+}
+
+.try_again.onclick {
+  background-color: #008cff;
+  transition: background-color 0.2s linear;
+}
+.type_mark {
+  opacity: 0.5;
+  position: absolute;
+}
+.type_mark.hide {
+  opacity: 0;
+}
+.main_timer{
+  font-size: 30px;
+}
+.btn{
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  margin: 0px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: #9bafffab;
+  user-select: none;
+  margin: 5px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.btn.unactive{
+  background-color: #949dc07e;
 }
